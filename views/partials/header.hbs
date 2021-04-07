@@ -1,0 +1,52 @@
+<div class="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">RuralArt</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/shopping-cart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart
+        <div class="badge">{{session.cart.totalQty}}</div>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>User Management
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{# if login }}
+              <a class="dropdown-item" href="/user/profile">User Account</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/user/logout">Logout</a>
+          {{else}}
+            <a class="dropdown-item" href="/user/signup">Sign Up</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/user/signin">Sign In</a>
+          {{/if}}
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+</svg>Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+<div style="background-color:beige;">
+        <img src="ruralart1.png" alt="logo" style="padding-left: 42%;">
+</div>
+</div>

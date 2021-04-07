@@ -1,0 +1,22 @@
+.thumbnail img{
+  max-height: 150px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.thumbnail img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.thumbnail description{
+  color:#7f7f7f;
+  
+}
+.price{
+  font-weight:bold;
+  font-size:16px;
+}
+.row{
+  background-color: white;
+}
+
